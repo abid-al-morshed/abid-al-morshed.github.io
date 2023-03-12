@@ -509,6 +509,15 @@ nav .fa-sharp{
         margin-top: 50px;
         padding: 20px;
      }
+     .logo{
+        width: 120px;
+     }
+     .telephone, .gmail{
+        margin-right: 190px;
+     }
+     .contact-right{
+        margin-top: 150px;
+     }
 }
 #msg{
     color: #61b752;
