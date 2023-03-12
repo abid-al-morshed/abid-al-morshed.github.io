@@ -179,13 +179,16 @@ nav ul li a:hover::after{
     font-size: 20px;
     transition: height 0.5s;
 }
-
+.layer i{
+    margin-left: 10px;
+    margin-top: 20px;
+}
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
 }
 .layer a{
-    margin-top: 20px;
+    margin-top: 30px;
     color: #ff004f;
     text-decoration: none;
     font-size: 18px;
@@ -281,10 +284,11 @@ nav ul li a:hover::after{
     font-size: 25px;
     margin-top: 30px;
 }
-.telephone, .gmail{
+.telephone{
+    display: block;
     text-decoration: none;
     color: #fff;
-    margin-right: 105px;
+    margin-right: 10px;
 }
 .wrapper{
     display: inline-flex;
