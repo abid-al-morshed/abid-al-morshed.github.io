@@ -450,7 +450,7 @@ nav .fa-sharp{
         font-size: 25px;
     }
     nav ul{
-        background: linear-gradient(#ff004f,rgba(0,0,0,0.5));
+        background: linear-gradient(#535e79,rgba(0,0,0,0.5));
         position: fixed;
         top: 0;
         right: -200px;
