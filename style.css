@@ -144,11 +144,15 @@ nav ul li a:hover::after{
     padding: 100px 0;
 
  }
+ .sub-title.mywork{
+    margin-left: 40px;
+ }
  .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    margin: 0 40px;
  }
  .work{
     border-radius: 10px;
