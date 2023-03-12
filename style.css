@@ -141,7 +141,7 @@ nav ul li a:hover::after{
 
  /*-------------portfolio----------------*/
  #portfolio{
-    padding: 50px 0;
+    padding: 100px 0;
 
  }
  .work-list{
@@ -469,9 +469,10 @@ nav .fa-sharp{
     }
     .work-list{
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
-        grid-gap: 40px;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        grid-gap: 50px;
         margin-top: 50px;
+        padding: 20px;
      }
 }
 #msg{
