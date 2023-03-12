@@ -179,10 +179,7 @@ nav ul li a:hover::after{
     font-size: 20px;
     transition: height 0.5s;
 }
-.layer i{
-    margin-left: 10px;
-    margin-top: 20px;
-}
+
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
@@ -453,7 +450,7 @@ nav .fa-sharp{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: linear-gradient(#ff004f,rgba(0,0,0,0.5));
         position: fixed;
         top: 0;
         right: -200px;
