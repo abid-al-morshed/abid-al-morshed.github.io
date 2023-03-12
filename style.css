@@ -278,17 +278,17 @@ nav ul li a:hover::after{
     margin-right: 15px;
     font-size: 25px;
 }
-.fa-solid, .fa-sharp{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
-    margin-top: 30px;
-}
+
 .telephone{
+    margin-top: 30px;
     display: block;
     text-decoration: none;
     color: #fff;
-    margin-right: 10px;
+}
+.telephone i{
+    color: #ff004f;
+    font-size: 25px;
+    padding-right: 20px;
 }
 .wrapper{
     display: inline-flex;
