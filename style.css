@@ -270,8 +270,22 @@ nav ul li a:hover::after{
     margin-right: 15px;
     font-size: 25px;
 }
-
-
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.fa-solid, .fa-sharp{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.telephone, .gmail{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 105px;
+}
 .wrapper{
     display: inline-flex;
     list-style: none;
