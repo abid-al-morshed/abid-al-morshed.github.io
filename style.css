@@ -362,6 +362,10 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
 }
+.btn.btn3{
+    display: inline-block;
+    margin-left: -300px;
+}
 .contact-right form{
     width: 100%;
 }
