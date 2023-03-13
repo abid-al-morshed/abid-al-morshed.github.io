@@ -89,6 +89,7 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis:60%;
+    padding: 0 10%;
 }
 .sub-title{
     font-size: 60px;
@@ -97,6 +98,10 @@ nav ul li a:hover::after{
 }
 .about-col-2 p{
     text-align: justify;
+}
+
+.card{
+    width: 100%;
 }
 
 .tab-titles{
@@ -137,6 +142,33 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 
+}
+
+/*---------readmore---------*/
+#ch{
+    display: none;
+}
+.btn.btn4{
+    display: inline-block;
+    padding: 0 15px;
+    margin: 25px auto;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#ch:checked ~ .content{
+    display: block;
+}
+#ch:checked ~ label {
+    display: none;
+}
+
+.content{
+    display: none;   
 }
 
  /*-------------portfolio----------------*/
@@ -210,6 +242,11 @@ nav ul li a:hover::after{
 .work:hover .layer{
     height: 100%;
 }
+/*---------seemore-----------*/
+
+
+
+/*------------------button-------------*/
 .btn{
     display: block;
     margin: 50px auto;
@@ -493,6 +530,10 @@ nav .fa-sharp{
     }
     .about-col-2{
         font-size: 14px;
+        padding: 0 0;
+    }
+    .card{
+        width:100%
     }
     .tab-links{
         font-size: 16px;
