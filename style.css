@@ -86,10 +86,10 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    padding-right: 20%;
 }
 .about-col-2{
     flex-basis:60%;
-    padding: 0 10%;
 }
 .sub-title{
     font-size: 60px;
@@ -101,7 +101,7 @@ nav ul li a:hover::after{
 }
 
 .card{
-    width: 100%;
+    width: 60%;
 }
 
 .tab-titles{
@@ -147,6 +147,7 @@ nav ul li a:hover::after{
 /*---------readmore---------*/
 #ch{
     display: none;
+    transition: 0.5s;
 }
 .btn.btn4{
     display: inline-block;
