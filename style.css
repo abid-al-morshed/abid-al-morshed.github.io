@@ -525,7 +525,9 @@ nav .fa-sharp{
         padding: 0 40px;
      }
      .logo{
-        width: 100px;
+        width: 60px;
+        top: 25px;
+        right: 25px;
      }
      .telephone{
         margin-right: 10px;
