@@ -516,7 +516,10 @@ nav .fa-sharp{
         font-size: 18px;
     }
     .sub-title.mywork{
-        margin-left: 80px;
+        padding-left: 9.5%;
+    }
+    .work{
+        width: 100%;
     }
     .work-list{
         display: grid;
