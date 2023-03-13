@@ -499,6 +499,9 @@ nav .fa-sharp{
         display: block;
         font-size: 25px;
     }
+    nav .fa-sharp.fa-solid.fa-bars{
+        opacity: 100%;
+    }
     nav ul{
         background: linear-gradient(#535e79,rgba(0,0,0,0.5));
         position: fixed;
@@ -532,6 +535,9 @@ nav .fa-sharp{
     .about-col-2{
         font-size: 14px;
         padding: 0 0;
+    }
+    .about-col-1 img{
+        padding-right: 0%;
     }
     .card{
         width:100%
