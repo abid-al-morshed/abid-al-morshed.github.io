@@ -103,6 +103,9 @@ nav ul li a:hover::after{
 .card{
     width: 60%;
 }
+.content{
+    padding-top: 10px;
+}
 
 .tab-titles{
     display: flex;
@@ -498,9 +501,6 @@ nav .fa-sharp{
     nav .fa-sharp{
         display: block;
         font-size: 25px;
-    }
-    nav .fa-sharp.fa-solid.fa-bars{
-        opacity: 100%;
     }
     nav ul{
         background: linear-gradient(#535e79,rgba(0,0,0,0.5));
