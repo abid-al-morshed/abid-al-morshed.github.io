@@ -1,0 +1,126 @@
+<h2 class="section__title">Projects_</h2>
+        <div class="card__container grid">
+            <div class="project__item project_item1">
+                <a href="https://www.youtube.com/watch?v=s1yj7PG9WeA&t=26s" target="_blank"><h3 class="underline_hover">Building a Refrigerator using Peltier Effect</h3></a>
+                    <p>Used AutoCAD and SolidWorks to design prototype and final 
+                        model was built using DIY material</p>
+            </div>
+            <div class="project__item project_item2">
+                <a href="https://www.youtube.com/watch?v=s1yj7PG9WeA&t=26s" target="_blank"  class="project__img"><img src="assets/img/Refrigerator.jpg" alt="" class="project__img"></a>
+            </div>
+
+            <div class="project__item project_item3">
+                <a href="https://drive.google.com/drive/u/1/folders/1jPvp0Gq3hxyylB0PCcRjdubGno0Vq76U" target="_blank"><img src="assets/img/Robot.jpg" alt=""  class="project__img"></a>
+            </div>
+
+            <div class="project__item project_item4">
+                <a href="https://drive.google.com/drive/u/1/folders/1jPvp0Gq3hxyylB0PCcRjdubGno0Vq76U" target="_blank"><h3 class="underline_hover">An Arduino based Self-Balancing System</h3></a>
+                    <p>Used SolidWorks to model prototype and Fritzing to design circuit. 
+                    Final model was built using an Arduino nano.</p>
+            </div>
+
+        </div>
+
+
+
+
+
+.card__container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1em;
+}
+
+
+.project_item2{
+    text-align:end;
+    padding-right: 1em;
+}
+
+
+.project_item2 img,
+.project_item3 img {
+    width: 13rem;
+    height: 13em;
+    margin: 1.5em 1.5em;
+    border-radius: 1.5em;
+    object-fit: cover;
+    box-shadow: 0 0 27px rgb(96 96 96 / 34%);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project__img{
+    transition: 0.3s;
+    filter: saturate(1);
+}
+
+.project__img:hover{
+    transform: scale(0.97);
+    filter: saturate(0.7);
+}
+
+.project_item1{
+    grid-column: span 3;
+    padding-right: 1em;
+}
+
+.project_item4{
+    grid-column: span 3;
+    padding-left: 2.3em;
+}
+
+.project_item1 h3, .project_item4 h3{
+    margin: 1.5em 0;
+    margin-bottom: 0.7em;
+    transition: 0.3s;
+}
+
+.project_item1 h3:hover, .project_item4 h3:hover{
+    transform: scale(1.01);
+}
+
+.project_item1 a, .project_item4 a {
+    color: var(--primary-color);
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const contactForm =document.getElementById('contact-form'),
+    contactName = document.getElementById('contact-name'),
+    contactEmail = document.getElementById('contact-email')
+    Message = document.getElementById('message'),
+    contactMessage = document.getElementById('contace-message');
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (contactName.value === '' || contactEmail.value==='' || Message.value==='') {
+        contactMessage.classList.remove('color-light');
+        contactMessage.classList.add('color-dark');
+
+        contactMessage.textContent = 'Write all the input fields';
+    }
+    else {
+        emailjs.sendForm('','','','')
+    }
+
+    
+
+
+
+};
+
