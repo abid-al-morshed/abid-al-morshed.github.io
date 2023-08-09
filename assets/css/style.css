@@ -103,7 +103,7 @@ input{
 }
 /*================ Reusable Css =======================*/
 .container{
-    max-width: 100rem;
+    max-width: 75em;
     margin: 0 auto;
     padding-left: 0.9rem;
     padding-right: 0.9rem;
@@ -234,7 +234,7 @@ input{
 
 .home__container {
     grid-template-columns: 4fr 8fr;
-    column-gap: 1.875rem;
+    column-gap: 3rem;
 }
 
 .home__img,
@@ -406,6 +406,7 @@ input{
 
 .recent h2{
     padding-top: 3rem;
+    
 }
 
 .recent__item__container{
@@ -430,6 +431,7 @@ input{
 
 .recent_heading{
     color: #fff;
+    
 }
 
 .recent__img{
@@ -548,8 +550,8 @@ input{
 }
 
 .project__img{
-    width: 100%;
-    height: 100%;
+    width: 60em;
+    height: 22.5em;
     object-fit: cover;
     border-radius: 1em;
 }
