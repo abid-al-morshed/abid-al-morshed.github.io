@@ -762,6 +762,14 @@ textarea{
         --fs-xs: 0.6rem;
     }
 
+    .header{
+        display: block;
+        position: fixed;
+        height: 2.5rem;
+        background: rgba(59, 59, 59, 0.8);
+        backdrop-filter: blur(1.5px);
+    }
+
     .nav-toggle{
         display: inline-flex;
         position: fixed;    
