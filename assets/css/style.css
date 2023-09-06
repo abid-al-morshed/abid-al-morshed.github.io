@@ -152,6 +152,15 @@ input{
     z-index: 2;
 }
 
+#check{
+    position: absolute;
+    right: 5%;
+    font-size: 1.8rem;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
 .nav{
     height: calc(var(--header-height)+.875rem);
     display: flex;
@@ -159,8 +168,9 @@ input{
     transition: 0.3s;
 }
 .sticky{
-    padding: 0.5em 1.5em;
+    padding: 0.5rem 1.5rem;
     background: rgba(59, 59, 59, 0.8);
+    backdrop-filter: blur(1.5px);
     border-radius: 0.3em;
 }
 
@@ -169,8 +179,13 @@ input{
     column-gap: 3.25rem;
 }
 
-.nav__close,
-.nav__toggle{
+
+.nav-toggle{
+    position: absolute;
+    right: 5%;
+    font-size: 1.8rem;
+    color: #ffffff;
+    cursor: pointer;
     display: none;
 }
 
@@ -720,5 +735,84 @@ textarea{
     opacity: 0.4;
     margin-top: 3.75rem;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .header {
+        padding: 0.5rem 1%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-toggle{
+        display: inline-flex;
+        position: fixed;    
+    }
+
+
+
+    #check:checked~.nav-toggle #menu-icon{
+        display: none;
+    }
+    
+    #check:checked~.nav-toggle #close-icon{
+        display: block;
+    }
+
+
+    .nav{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .nav__list{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        width: 100%;
+        height: 0rem;
+        background: rgba(59, 59, 59, 0.8);
+        backdrop-filter: blur(1.5px);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.nav .nav__menu .nav__list{
+        height: 16rem;
+    }
+
+
+    .nav__list a{
+        display: block;
+        color: #fff;
+        font-size: var(--fs-sm);
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.nav .nav__menu .nav__list a{
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+    .nav-toggle #close-icon{
+        display: none;
+    }
+
+
 }
 

@@ -12,31 +12,33 @@
 <body>
 <!--=========================Header=================================-->
 <header class="header" id="header">
-    <nav class="nav container">
-        <div class="nav__menu" id="nav-menu">
+    <input type="checkbox" id="check">
+    <label for="check" class="nav-toggle">
+        <i class="ri-menu-fill" id="menu-icon"></i>
+        <i class="ri-close-fill" id="close-icon"></i>
+    </label>
+    <nav class="nav container"> 
+        <div class="nav__menu" id="nav-menu">   
             <ul class="nav__list">
                 <li>
-                    <a href="#home" class="nav__link">Hello</a> <!--ekhane active-link chile class e nav__link er pore-->
+                    <a href="#home" class="nav__link" style="--i:0;">Hello</a> <!--ekhane active-link chile class e nav__link er pore-->
                 </li>
                 <li>
-                    <a href="#resume" class="nav__link">Resume</a>
+                    <a href="#resume" class="nav__link" style="--i:1;">Resume</a>
                 </li>
                 <li>
-                    <a href="#recent" class="nav__link">Current Work</a>
+                    <a href="#recent" class="nav__link" style="--i:2;">Current Work</a>
                 </li>
                 <li>
-                    <a href="#portfolio" class="nav__link">Projects</a>
+                    <a href="#portfolio" class="nav__link" style="--i:3;">Projects</a>
                 </li>
                 <li>
-                    <a href="#contact" class="nav__link">Contact</a>
+                    <a href="#contact" class="nav__link" style="--i:4;">Contact</a>
                 </li>
             </ul>
-            <div class="nav__close" id="nav-close">
+            <!--<div class="nav__close" id="nav-close">
                 <i class="ri-close-fill"></i>
-            </div>
-        </div>
-        <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-fill"></i>
+            </div>-->
         </div>
     </nav>
 </header>
@@ -397,8 +399,11 @@
 <!--=============JS===============-->
 <script>
     window.addEventListener("scroll",function(){
+        var width= window.innerWidth;
         var header = document.querySelector("nav");
+        if (width>768){
         header.classList.toggle("sticky", window.scrollY > 0);
+        }
     })
 
 </script>
