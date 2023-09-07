@@ -12,7 +12,7 @@
 <body>
 <!--=========================Header=================================-->
 <header class="header" id="header">
-    <input type="checkbox" id="check" value="checkbox">
+    <input type="checkbox" id="check">
     <label for="check" class="nav-toggle">
         <i class="ri-menu-fill" id="menu-icon"></i>
         <i class="ri-close-fill" id="close-icon"></i>
@@ -404,6 +404,23 @@
     })
 
 </script>
+
+<script>
+    document.addEventListener("click", function(event) {
+    const checkbox = document.getElementById("check");
+
+    // Check if the click event target is the checkbox itself
+    if (event.target === checkbox) {
+        // Do nothing when the checkbox is clicked directly
+        return;
+    }
+
+    // Uncheck the checkbox if it's currently checked
+    if (checkbox.checked) {
+        checkbox.checked = false;
+    }
+});
+  </script>
 
 
 <!--=============JS===============-->
