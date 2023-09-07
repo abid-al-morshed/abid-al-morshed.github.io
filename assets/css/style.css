@@ -629,7 +629,6 @@ input{
 }
 
 .contact__content{
-    z-index: 10;
     position: relative;
 }
 
@@ -660,6 +659,10 @@ input{
     font-weight: var(--bold);
     text-transform: uppercase;
 
+}
+
+.contact__list a{
+    color: #fff;
 }
 
 .contact__list dd{
@@ -749,6 +752,11 @@ textarea{
     .header {
         padding: 0.5rem 1%;
     }
+/*=================header================*/
+.contact__socials{
+    column-gap: 1.5rem;   
+}
+
 }
 
 
@@ -776,7 +784,6 @@ textarea{
         height: 2.5rem;
         background: rgba(59, 59, 59, 0.8);
         backdrop-filter: blur(1.5px);
-        z-index: 1000;
     }
 
     .nav-toggle{
@@ -848,6 +855,14 @@ textarea{
     .contact__container{
         display: inline;
     }
+    .contact__list{
+        margin-bottom: 1.5rem;
+    }
+
+    .contact__socials{
+        column-gap: 1.5rem;    
+    }
+    
 
     /*=================project================*/
     .project__categories {
@@ -909,3 +924,13 @@ textarea{
 
 }
 
+@media (max-width: 390px) {
+    .contact__socials{
+        display: flex;
+        margin-bottom: 1.5rem;
+        column-gap: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
