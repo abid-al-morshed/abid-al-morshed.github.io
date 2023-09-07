@@ -616,7 +616,6 @@ input{
     background-size: cover;
     position: relative;
     background-position: 50%;
-    z-index: -999;
 }
 
 .contact::before{
@@ -769,6 +768,7 @@ textarea{
         height: 2.5rem;
         background: rgba(59, 59, 59, 0.8);
         backdrop-filter: blur(1.5px);
+        z-index: 1000;
     }
 
     .nav-toggle{
