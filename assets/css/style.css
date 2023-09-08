@@ -913,7 +913,7 @@ textarea{
         align-self: center;
     }
     .project__data {
-        padding: 1.5rem 1.5rem 1.5rem 1rem;
+        padding: 1.5rem 1rem 1rem 1rem;
     
     }
 
@@ -928,6 +928,10 @@ textarea{
     }
     .project__stack{
         margin-bottom: 0.8em;
+    }
+
+    .project__link{
+        margin-top: 1.5em;
     }
 
     /*=================recent work================*/
