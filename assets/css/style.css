@@ -852,6 +852,10 @@ textarea{
     .nav-toggle #close-icon{
         display: none;
     }
+    /*=================contact================*/
+    .hello__details{
+        font-size: 0.8rem;
+    }
 
     /*=================contact================*/
 
@@ -897,17 +901,34 @@ textarea{
     }
 
     .project__item{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
     .project__img{
-    width: 40em;
-    height: 18em;
-    object-fit: cover;
-    border-radius: 1em;
-}
+        width: 40em;
+        height: 15em;
+        object-fit: cover;
+        border-radius: 1em;
+        align-self: center;
+    }
+    .project__data {
+        padding: 1.5rem 1.5rem 1.5rem 1rem;
+    
+    }
 
-
+    .project__title{
+        text-align: left;
+        line-height: 1.4em;
+    }
+    .project__description{
+        text-align: justify;
+        font-size: 0.8rem;
+        margin-bottom: 1em;
+    }
+    .project__stack{
+        margin-bottom: 0.8em;
+    }
 
     /*=================recent work================*/
     .item1{
@@ -931,6 +952,7 @@ textarea{
 
 
 
+
  /*=================home================*/
 .home__container {
     display: grid;
@@ -940,6 +962,7 @@ textarea{
 }
 .home{
     margin-bottom: 1.5rem;
+    padding-top: 2.5rem;
 }
 
 .home__img{
