@@ -774,7 +774,10 @@ textarea{
     .section{
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
+    }
+    .main{
+        width: 100%;
+    }
 
     /*=================header================*/
 
@@ -862,12 +865,34 @@ textarea{
     .contact__socials{
         column-gap: 1.5rem;    
     }
-    
+    /*=================resume================*/
+    .resume__container{
+        column-gap: 1.5rem;
+    }
 
+    .resume__item{
+        padding-left: 1rem;
+    }
+
+    .resume__item::before{
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border:2px solid var(--primary-color);
+        position: absolute;
+        left: -0.45rem;
+        background-color: var(--bg-color);
+    }
+
+    .resume__description{
+        font-size: 0.7rem;
+        text-align: left;
+    }
     /*=================project================*/
     .project__categories {
         display: flex;
-        column-gap: 3rem;
+        column-gap: 2rem;
         margin-bottom: 1.875rem;
     }
 
@@ -901,21 +926,29 @@ textarea{
     .recent__txt{
         padding: 0;
         padding-left: 1em;
+        font-size: 0.8rem;
     }
+
+
 
  /*=================home================*/
 .home__container {
     display: grid;
-    grid-template-rows: 4fr 4fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    row-gap: 2rem;
+    row-gap: 1.5rem;
 }
 .home{
     margin-bottom: 1.5rem;
 }
 
 .home__img{
+    width: 80%;
+    height: 80%;
     transform: translateY(0rem);
+    align-self: center;
+    justify-self: center;
+    
 }
 
 .home__name{
