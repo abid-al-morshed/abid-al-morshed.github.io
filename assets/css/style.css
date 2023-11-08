@@ -149,7 +149,7 @@ input{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 20;
 }
 
 #check{
@@ -168,10 +168,26 @@ input{
     transition: 0.3s;
 }
 .sticky{
-    padding: 0.5rem 1.5rem;
     background: rgba(59, 59, 59, 0.8);
     backdrop-filter: blur(1.5px);
     border-radius: 0.3em;
+}
+
+.nav ul li a {
+    font-size: medium;
+}
+
+.sticky ul li a {
+    font-size: large;
+    padding: 0.5em 0.7em;
+}
+
+.nav__menu ul li a{
+    display: block;
+}
+
+.nav__menu ul li a:hover{
+    opacity: 0.5;
 }
 
 .nav__list{
@@ -179,6 +195,33 @@ input{
     column-gap: 3.25rem;
 }
 
+.nav__menu ul li{
+    position: relative;
+}
+
+.nav__menu ul li ul {
+    position: absolute;
+    left: 0;
+    width: 8em;
+    background: rgba(59, 59, 59, 0.8);
+    display: none;
+}
+
+.nav__menu ul li ul li {
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+
+
+.nav__menu ul li ul li a {
+    color: #fff;
+}
+
+.nav__menu ul li :focus-visible,
+.nav__menu ul li:hover > ul{
+    display: initial;
+}
 
 .nav-toggle{
     position: absolute;
@@ -755,6 +798,8 @@ textarea{
     .header {
         padding: 0.5rem 1%;
     }
+
+
 /*=================header================*/
 .contact__socials{
     column-gap: 1.5rem;   
@@ -787,9 +832,28 @@ textarea{
     .header{
         display: block;
         position: fixed;
-        height: 2.5rem;
+        height: 2.531rem;
         background: rgba(59, 59, 59, 0.8);
         backdrop-filter: blur(1.5px);
+    }
+    .sticky ul li a {
+        font-size: small;
+        padding: 0.5em 0.7em;
+    }
+
+    .sticky ul li ul li a {
+        font-size: 1em;
+        padding: 0em 0.7em;
+        margin: 0 0;
+    }
+
+    .nav__menu ul li ul li{
+        width: 100%;
+        border: none;
+        }
+
+    .ctr{
+        margin-bottom: 0;
     }
 
     .nav-toggle{
@@ -798,20 +862,24 @@ textarea{
     }
 
 
-    #check:checked~.nav-toggle #menu-icon{
+     #check:checked~.nav-toggle #menu-icon{
         display: none;
     }
     
     #check:checked~.nav-toggle #close-icon{
-        display: none;
+        display: block;
     }
-    
-    .nav{
-        display: fixed;
-        width: 100%;
 
-        
+    .nav__menu ul li ul {
+    position: relative;
+    width: 100%;
+    } 
+    
+  .nav{
+        display: fixed;
+        width: 100%;     
     }
+   
 
     .nav__list{
         display: block;
@@ -828,18 +896,26 @@ textarea{
     }
 
     #check:checked~.nav .nav__menu .nav__list{
-        height: 16rem;
+        height: 18rem;
+    } 
+
+    #check:checked~.nav .drop_down_menu{
+        display: block;
     }
+
+
+    
+
     #navbar {
         z-index: 999;
     }
 
 
-    .nav__list a{
+      .nav__list a{
         display: block;
         color: #fff;
         font-size: var(--fs-sm);
-        margin: 1.5rem 0;
+        margin: 0.8rem 0;
         text-align: center;
         transform: translateY(-50px);
         opacity: 0;
@@ -852,7 +928,7 @@ textarea{
         transition-delay: calc(.15s * var(--i));
     }
 
-    .nav-toggle #close-icon{
+   .nav-toggle #close-icon{
         display: none;
     }
     /*=================contact================*/
