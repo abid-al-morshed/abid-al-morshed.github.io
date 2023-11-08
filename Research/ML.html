@@ -21,16 +21,23 @@
         <div class="nav__menu" id="nav-menu">   
             <ul class="nav__list">
                 <li>
-                    <a href="https://abid-al-morshed.github.io/" target="_blank" class="nav__link" style="--i:0;">Home</a> <!--ekhane active-link chile class e nav__link er pore-->
+                    <a href="#home" class="nav__link" style="--i:0;">Hello</a> <!--ekhane active-link chile class e nav__link er pore-->
                 </li>
                 <li>
-                    <a href="https://abid-al-morshed.github.io/#resume" target="_blank" class="nav__link" style="--i:1;">Resume</a>
+                    <a href="#resume" class="nav__link" style="--i:1;">Resume</a>
                 </li>
                 <li>
-                    <a href="#home" class="nav__link" style="--i:2;">Research Work</a>
+                    <a href="#recent" class="nav__link ctr" style="--i:2;">Research Work +</a>
+                    
+                     <ul>
+                        <li><a href="#"  class="nav__sub__link" style="--i:1;" >CFD/ML</a></li>
+                            <li><a href="https://abid-al-morshed.github.io/Research/ML.html" class="nav__sub__link" style="--i:1;">Energy Storage</a></li>
+                    </ul>
+                    
+                    
                 </li>
                 <li>
-                    <a href="https://abid-al-morshed.github.io/#portfolio" target="_blank" class="nav__link" style="--i:3;">Projects</a>
+                    <a href="#portfolio" class="nav__link" style="--i:3;">Projects</a>
                 </li>
                 <li>
                     <a href="#contact" class="nav__link" style="--i:4;">Contact</a>
@@ -48,31 +55,31 @@
         <div class="grid_container">
             <h1 class="pew">Using ML to predict CFD characteristics</h1>
             <article class="featured">
-                <img src="Untitled.jpg" alt="profile">
+                <img src="ANN.jpg" alt="profile">
                 <div>
                     <h2>What is the purpose?</h2>
-                    <p> the purpose of the study is to investigate the heat transfer and pressure drop characteristics of a thermal system that includes a ventilated cavity with a dynamic flow modulator. The study considers five distinct parameters that influence these characteristics: flow characteristic and convection property of working fluid, dynamic property of the modulator, and the modulator's placement in vertical and horizontal direction. To analyze these characteristics, the study employs a hybrid approach that combines Computational Fluid Dynamics (CFD) simulation and Neural Network (NN) modeling. CFD simulation is used to generate a large dataset of representative flow conditions, which then serves as training data for the NN models.</p>
+                    <p> The use of machine learning (ML) in computational fluid dynamics (CFD) is gaining traction due to its ability to enhance accuracy, reduce computational costs, and improve understanding of fluid flow phenomena. ML algorithms can effectively learn from data to make predictions about fluid behavior, leading to more accurate simulations, particularly for complex flows that pose challenges for traditional modeling methods. Additionally, ML can be employed to develop surrogate models that approximate CFD simulation results with reduced computational demands, thereby streamlining the simulation process. Furthermore, ML can be applied to analyze CFD simulation results to gain deeper insights into fluid flow patterns, fostering the development of more efficient and effective engineering solutions.</p>
                 </div>
             </article>  
             <article>
-                <img src="RMSE.jpg" alt="">
+                <img src="lathi.jpg" alt="">
                 <div>
                     <h3>ANN? ANFIS?</h3>
                     <p>Artificial Neural Network (ANN) is more widely used and easier to implement than Adaptive Neuro-Fuzzy Inference System (ANFIS). ANNs are more flexible and can learn complex patterns from data, while ANFIS can handle imprecise and uncertain data. However, ANFIS can be more computationally expensive and difficult to interpret.</p>
                 </div>
             </article>   
             <article>
-                <img src="RMSE-anfis.jpg" alt="">
+                <img src="Untitled.jpg" alt="">
                 <div>
-                    <h3>SO...ANN or ANFIS?</h3>
-                    <p>We've found that both NN models provide accurate predictions of heat transfer and pressure drop characteristics and guess what! this hybrid approach using CFD simulation and NN modeling is a very effective and time saving method for analyzing the complex interactions between the various parameters influencing heat transfer and pressure drop characteristics in thermal systems!</p>
+                    <h3>Study on Ventilated Cavity incorporating ML(in preparation)</h3>
+                    <p>Study on ventilated cavity has the potential to significantly improve the design and optimization of thermal systems by providing a comprehensive understanding of the factors influencing heat transfer and pressure drop characteristics. This findings can be applied to various applications, including heat exchangers, air conditioning systems, and electronic cooling systems.</p>
                 </div>
             </article>
             <article>
-                <img src="Relative-error-P-200sample.jpg" alt="">
+                <img src="Porous-Media.jpg" alt="">
                 <div>
-                    <h3>Okay, but why do we need it??</h3>
-                    <p>Because, this study has the potential to significantly improve the design and optimization of thermal systems by providing a comprehensive understanding of the factors influencing heat transfer and pressure drop characteristics. This findings can be applied to various applications, including heat exchangers, air conditioning systems, and electronic cooling systems.</p>
+                    <h3>Study on Porous-Media (in preparation)</h3>
+                    <p>CFD simulations of porous media are often computationally expensive, especially for complex geometries. ML can be used to reduce the computational cost of these simulations by providing reduced-order models or by accelerating the solution process.</p>
                 </div>
             </article>  
         </div>   
