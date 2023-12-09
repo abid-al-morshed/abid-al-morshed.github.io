@@ -846,7 +846,7 @@ textarea{
 
     .sticky ul li ul li a {
         font-size: 1em;
-        padding: 0em 0.7em;
+        padding: 0em 0.3em;
         margin: 0 0;
     }
 
@@ -854,10 +854,6 @@ textarea{
         width: 100%;
         border: none;
         }
-
-    .ctr{
-        margin-bottom: 0;
-    }
 
     .nav-toggle{
         display: inline-flex;
@@ -877,12 +873,20 @@ textarea{
     position: relative;
     width: 100%;
     } 
-    
+
   .nav{
         display: fixed;
         width: 100%;     
     }
    
+    .nav__menu ul li .ctr{
+        margin: 0 0;
+    }
+
+    .nav__menu ul li ul li .nav__sub__link{
+        margin: 0 0;
+    }
+
 
     .nav__list{
         display: block;
@@ -899,7 +903,7 @@ textarea{
     }
 
     #check:checked~.nav .nav__menu .nav__list{
-        height: 18rem;
+        height: 20rem;
     } 
 
     #check:checked~.nav .drop_down_menu{

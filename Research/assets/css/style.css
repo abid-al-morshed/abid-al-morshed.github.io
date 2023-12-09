@@ -579,9 +579,13 @@ article.featured {
         border: none;
         }
 
-    .ctr{
-        margin-bottom: 0;
-    }
+    .nav__menu ul li .ctr{
+            margin: 0 0;
+        }
+    
+    .nav__menu ul li ul li .nav__sub__link{
+            margin: 0 0;
+        }
 
     .nav-toggle{
         display: inline-flex;
@@ -623,7 +627,7 @@ article.featured {
     }
 
     #check:checked~.nav .nav__menu .nav__list{
-        height: 18rem;
+        height: 20rem;
     } 
 
     #check:checked~.nav .drop_down_menu{
