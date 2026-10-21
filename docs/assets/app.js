@@ -49,7 +49,7 @@
     <div class="research-intro"><div><h2>The research problem</h2><p>${e(r.overview)}</p><p class="research-affiliation">Michigan Technological University<br>Advisor: Dr. Trisha Sain</p></div>${researchMedia(true)}</div>
     <section class="section"><div class="section-heading"><h2>Model & implementation</h2></div><div class="method-grid"><div><h3>Mixed-mode fracture formulation</h3><p>${e(r.approach)}</p></div><div><h3>Custom finite element implementation</h3><p>${e(r.implementation)}</p></div></div></section>
     <section class="section"><div class="section-heading"><h2>Selected findings</h2></div><div class="finding-list">${r.findings.map(f=>`<article><h3>${e(f.title)}</h3><p>${e(f.text)}</p></article>`).join('')}</div></section>
-    <section class="section"><div class="section-heading"><h2>Related publications</h2>${textLink('Full publication list','publications.html')}</div><div class="related-list">${r.related.map(id=>c.publications.find(w=>w.id===id)).filter(Boolean).map(w=>`<article><span class="related-status">${e(w.status)}</span><a href="publications.html#${e(w.id)}">${e(w.title)} <span aria-hidden="true">→</span></a></article>`).join('')}</div></section>`;
+    <section class="section"><div class="section-heading"><h2>Related publications</h2>${textLink('Full publication list','publications.html')}</div><div class="related-list">${r.related.map(id=>c.publications.find(w=>w.id===id)).filter(Boolean).map(w=>`<article><span class="related-status">${e(w.status)}</span><span class="related-title">${e(w.title)}</span></article>`).join('')}</div></section>`;
   }
   function publicationRow(w,index) {
     const authors=w.authors.map(a=>a==='M. A. A. Morshed'?`<strong>${e(a)}</strong>`:e(a)).join(', ');
