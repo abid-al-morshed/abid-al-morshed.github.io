@@ -43,15 +43,20 @@ window.PORTFOLIO = {
     {id:"mode-resolved-manuscript", title:"A Three-dimensional Mode-resolved Phase-field Formulation for Quasi-static and Dynamic Intralaminar Fracture in Unidirectional Composite", status:"Under review", type:"Journal manuscript", authors:["M. A. A. Morshed","M. R. Karim","A. Kumar","T. Sain"], venue:"Computer Methods in Applied Mechanics and Engineering", detail:"", year:"2026", doi:""},
     {id:"dynamic-fracture-manuscript", title:"Towards Dynamic Fracture Modeling of Fiber-Reinforced Composites Using a Mixed-Mode Energy Decomposition-Based Phase-Field Approach", status:"Under review", type:"Journal manuscript", authors:["M. A. A. Morshed","T. Sain"], venue:"Engineering Fracture Mechanics", detail:"", year:"2026", doi:""}
   ],
+  // Home features these events; the full gallery keeps every event below.
+  homeActivities: ["ses-2026", "asc-2026", "three-minute-thesis-2026"],
   events: [
-    {id:"ses-2026", title:"Society of Engineering Science", shortTitle:"SES 2026", date:"", dateLabel:"2026", location:"", description:"Presented research on phase-field modeling and composite fracture.", photos:[], slides:"", recording:""},
-    {id:"asc-2026", title:"American Society for Composites", shortTitle:"ASC 2026", date:"", dateLabel:"2026", location:"", description:"Presented a mixed-mode phase-field framework for dynamic fracture in fiber-reinforced composites.", photos:[], slides:"", recording:""},
-    {id:"three-minute-thesis", title:"Three Minute Thesis", shortTitle:"3MT", date:"", dateLabel:"2024 & 2025", location:"Michigan Tech", description:"Shared my research with a broader audience in the Three Minute Thesis competition.", photos:[], slides:"", recording:""}
+    {id:"ses-2026", title:"Society of Engineering Science", shortTitle:"SES", date:"", dateLabel:"2026", location:"", description:"Presenting composite fracture research at SES", photos:[], slides:"", recording:""},
+    {id:"asc-2026", title:"American Society for Composites", shortTitle:"ASC", date:"", dateLabel:"2026", location:"", description:"Presenting dynamic fracture modeling at ASC", photos:[], slides:"", recording:""},
+    {id:"three-minute-thesis-2026", title:"Three Minute Thesis", shortTitle:"3MT", date:"", dateLabel:"2026", location:"Michigan Tech", description:"Three Minute Thesis at Michigan Tech", photos:[], slides:"", recording:""},
+    {id:"three-minute-thesis-2025", title:"Three Minute Thesis", shortTitle:"3MT", date:"", dateLabel:"2025", location:"Michigan Tech", description:"Three Minute Thesis at Michigan Tech", photos:[], slides:"", recording:""},
+    {id:"gsg-poster-2025", title:"GSG poster presentation", shortTitle:"GSG", date:"", dateLabel:"2025", location:"", description:"Poster presentation at GSG", photos:[], slides:"", recording:""},
+    {id:"icc-poster-2025", title:"ICC poster presentation", shortTitle:"ICC", date:"", dateLabel:"2025", location:"", description:"Poster presentation at ICC", photos:[], slides:"", recording:""}
   ],
   involvement: [
-    {id:"reu-mentoring", title:"Research rotation mentoring", shortTitle:"COE–REU", dateLabel:"2026", description:"Research Rotation Mentor in the COE–REU Program.", photos:[]},
-    {id:"festival-of-nations", title:"Festival of Nations", shortTitle:"Festival of Nations", dateLabel:"2026", description:"Participating in community activities at the Festival of Nations.", photos:[]},
-    {id:"trail-cleanup", title:"Keweenaw Land Trust", shortTitle:"Trail cleanup", dateLabel:"2025", description:"Trail cleanup with the Keweenaw Land Trust.", photos:[]}
+    {id:"reu-mentoring", title:"Research rotation mentoring", shortTitle:"COE–REU", dateLabel:"2026", description:"Research rotation mentoring in the COE–REU Program", photos:[]},
+    {id:"festival-of-nations", title:"Festival of Nations", shortTitle:"Festival of Nations", dateLabel:"2026", description:"Community involvement at the Festival of Nations", photos:[]},
+    {id:"trail-cleanup", title:"Keweenaw Land Trust", shortTitle:"Trail cleanup", dateLabel:"2025", description:"Trail cleanup with the Keweenaw Land Trust", photos:[]}
   ],
   // Home shows four entries. Every record remains in News & updates.
   // Only confirmed years are used until exact announcement dates are supplied.
@@ -61,10 +66,11 @@ window.PORTFOLIO = {
     {title:"Research presented at SES and ASC", category:"Conferences", dateLabel:"2026", group:"2026", description:"Presented my research on phase-field modeling of composite fracture at the Society of Engineering Science and American Society for Composites conferences.", href:"talks.html"},
     {title:"College of Engineering Candidacy Incentive Award", category:"Award", dateLabel:"2026", group:"2026", description:"Received the College of Engineering Candidacy Incentive Award at Michigan Technological University.", href:"about.html#honors"},
     {title:"Mentoring in the COE–REU Program", category:"Mentoring", dateLabel:"2026", group:"2026", description:"Served as a Research Rotation Mentor.", href:"talks.html#involvement"},
-    {title:"Three Minute Thesis at Michigan Tech", category:"Activity", dateLabel:"2025", group:"2025", description:"Participated in the Three Minute Thesis competition.", href:"talks.html#three-minute-thesis"},
+    {title:"Poster presentation at ICC", category:"Presentation", dateLabel:"2025", group:"2025", description:"Presented a research poster at ICC.", href:"talks.html#icc-poster-2025"},
+    {title:"Three Minute Thesis at Michigan Tech", category:"Activity", dateLabel:"2025", group:"2025", description:"Participated in the Three Minute Thesis competition.", href:"talks.html#three-minute-thesis-2025"},
     {title:"CFD and neural-network research published in Heat Transfer", category:"Publication", dateLabel:"2025", group:"2025", description:"Published work on mixed convection in a vented cavity under dynamic flow modulation.", href:"publications.html#cfd-ml-paper"},
     {title:"Energy-storage research published in ENCON23 proceedings", category:"Publication", dateLabel:"2024", group:"2024", description:"Thermal analysis of advanced adiabatic compressed-air energy storage with phase-change materials.", href:"publications.html#energy-storage-paper"},
-    {title:"Three Minute Thesis at Michigan Tech", category:"Activity", dateLabel:"2024", group:"2024", description:"Participated in the Three Minute Thesis competition.", href:"talks.html#three-minute-thesis"}
+    {title:"Three Minute Thesis at Michigan Tech", category:"Activity", dateLabel:"2024", group:"2024", description:"Participated in the Three Minute Thesis competition.", href:"talks.html"}
   ],
   education: [
     {title:"PhD in Mechanical and Aerospace Engineering", institution:"Michigan Technological University", description:"Computational modeling of composite fracture", dates:"Expected Fall 2027"},
