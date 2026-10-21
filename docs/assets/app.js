@@ -56,7 +56,7 @@
   }
   function publicationRow(w,index) {
     const authors=w.authors.map(a=>a==='M. A. A. Morshed'?`<strong>${e(a)}</strong>`:e(a)).join(', ');
-    return `<article class="pub-row" id="${e(w.id)}"><div class="pub-index">${String(index+1).padStart(2,'0')}<span>${e(w.year)}</span></div><div class="pub-content"><p class="pub-type">${e(w.type)}</p><h3>${e(w.title)}</h3><p class="pub-authors">${authors}.</p><p class="pub-venue"><cite>${e(w.venue)}</cite>${w.detail?`. ${e(w.detail)}`:''}${w.detail.endsWith('.')?'':'.'} ${e(w.year)}.</p>${w.status==='Accepted'?'<p class="pub-state">Accepted for publication · Not yet published</p>':w.status==='Under review'?'<p class="pub-state review">Manuscript under review</p>':''}${w.doi?`<div class="pub-links">${textLink('Read article',w.doi,true)}<span class="doi">DOI: ${e(w.doi.replace('https://doi.org/',''))}</span></div>`:''}</div></article>`;
+    return `<article class="pub-row" id="${e(w.id)}"><div class="pub-index">${String(index+1).padStart(2,'0')}<span>${e(w.year)}</span></div><div class="pub-content"><p class="pub-type">${e(w.type)}</p><h3>${e(w.title)}</h3><p class="pub-authors">${authors}.</p><p class="pub-venue"><cite>${e(w.venue)}</cite>${w.detail?`. ${e(w.detail)}`:''}${w.detail.endsWith('.')?'':'.'} ${e(w.year)}.</p>${w.status==='Accepted'?'<p class="pub-state">Accepted for publication</p>':w.status==='Under review'?'<p class="pub-state review">Manuscript under review</p>':''}${w.doi?`<div class="pub-links">${textLink('Read article',w.doi,true)}<span class="doi">DOI: ${e(w.doi.replace('https://doi.org/',''))}</span></div>`:''}</div></article>`;
   }
   function publications() {
     const groups=[['Published','published'],['Accepted','accepted'],['Under review','under-review']];
