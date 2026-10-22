@@ -8,7 +8,12 @@ window.PORTFOLIO = {
     intro: "I develop computational models to understand how composite structures deform and fracture, with a focus on finite element methods and custom Abaqus implementations.",
     portrait: "assets/portrait.webp",
     email: "abidalmorshed@gmail.com",
-    links: { linkedin: "", github: "https://github.com/abid-al-morshed", scholar: "", researchgate: "" },
+    links: {
+  linkedin: "https://www.linkedin.com/in/abid-al-morshed",
+  github: "https://github.com/abidalmorshed",
+  scholar: "https://scholar.google.com/citations?user=jPTiHqkAAAAJ&hl=en",
+  researchgate: "www.researchgate.net/profile/Md-Abid-Morshed"
+},
     resume: "", cv: "assets/abid-al-morshed-cv.pdf"
   },
   research: {
